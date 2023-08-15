@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case01</title>
+    <link rel="stylesheet" href="assist/css/normalize.css">
+    <style>
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .main{
+            width:50vw ;
+            height: 50vh;
+            position: absolute;
+        }
+        section>.main:first-child{
+            background: red;
+        }
+        section>.main:nth-child(2){
+            background: green;
+            right: 0;
+        }
+        section>.main:nth-child(3){
+            background: yellow;
+            left: 0;
+            bottom: 0;
+        }
+        section>.main:nth-child(4){
+            background: pink;
+            right:0;
+            bottom: 0;
+        }
+        section>#mid{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            aspect-ratio: 1/1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>#mid_cricle{
+            background: red;
+            width: 10vw;
+            height: 10vw;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>.main>div{
+            background: white;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        section>.main>div>div{
+            background: red;
+            width: 7vw;
+            height: 7vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div id="mid"></div>
+    <div id="mid_cricle"></div>
+    <div id="c1" class="coner"></div>
+    <div id="c2" class="coner"></div>
+    <div id="c3" class="coner"></div>
+    <div id="c4" class="coner"></div>
+    <div id="c5" class="coner"></div>
+    <div id="c6" class="coner"></div>
+
+</section>
+
+</body>
+</html>
